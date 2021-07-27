@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root{
+    --rojo-claro : hsl(0, 36%, 70%);
+    --rojo : hsl(0, 93%, 68%);
+    --marron : hsl(0, 6%, 24%);
+
+    
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contenedor{
+    width: 1440;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.header{
+    width: 600px;
+    padding: 0px 170px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header-texto .titulo{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: var(--marron);
+    line-height: 60px;
+}
+.header-texto .parrafo{
+    margin: 20px 0;
+    line-height: 23px;
+    color: var(--rojo-claro);
+    font-weight: 400;
+}
+.formulario{
+    position: relative;
+    margin: 30px 0;
+}
+.formulario .input{
+    width: 100%;
+    padding: 15px;
+    padding-left: 30px;
+    border-radius: 100px;
+    border: 1px solid var(--rojo-claro);
+    font-weight: 700;
+    color: var(--marron);
+    outline: none;
+}
+.formulario .input::placeholder{
+    color: var(--rojo-claro);
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+
+}
+.formulario .submit{
+    padding: 13px 40px;
+    border-radius: 100px;
+    border: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: linear-gradient(135deg, rgba(248,191,191,1) 0%, rgba(238,140,140,1) 35%);
+    box-shadow: 0px 4px 7px #0002;
+    cursor: pointer;
+    transition: box-shadow, opacity .5s;
+}
+.formulario .submit:hover{
+    opacity: .7;
+    box-shadow: 0px 6px 10px #0007;
+}
+.icono__incorrecto{
+    position: absolute;
+    top: 13px;
+    right: 105px;
+    display: none;
+}
+.mensaje{
+    position: absolute;
+    bottom: -25px;    
+    left: 20px;
+    font-size: 14px;
+    color: var(--rojo);
+    display: none;
+}
+
+
+/* js */
+
+.mensaje-incorrecto .input{
+    border: 1px solid var(--rojo);
+}
+
+.mensaje-incorrecto .icono__incorrecto{
+    display: block;
+}
+.mensaje-incorrecto .mensaje{
+    display: block;
+}
+
+.contenedor-img{
+    width: 502px;
+    height: 100vh;
+}
+.contenedor-img .imagen{
+    width: 100%;
+    object-fit: cover; 
+}
+
+.logo{
+    width: 170px;
+}
+
+.header-texto .naranja{
+    color: var(--rojo-claro);
+    font-weight: 300;
+}
