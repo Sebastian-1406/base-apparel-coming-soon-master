@@ -16,7 +16,7 @@
 
 <body>
 
-	<header class="hero">
+	<header class="hero" role="banner">
 
 		<div class="contenedor">
 			<img src="./images/logo.svg" alt="base-apparel" class="logo">
@@ -25,14 +25,14 @@
 		<img src="./images/hero-mobile.jpg" alt="hero-mobile" aria-hidden="true" class="img img-mobile">
 		<img src="./images/hero-desktop.jpg" alt="hero-desktop" aria-hidden="true" class="img img-desktop">
 
-		<div class="contenedor">
+		<div class="contenedor" role="main">
 			<div class="texto">
 				<h1><span>WE'RE</span>COMMING SOON</h1>
 				<p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay
 					up-to-date with announcements and our launch deals.</p>
 				<form id="formulario" class="formulario" autocomplete="off">
 					<input type="email" name="email" id="email" aria-label="email" placeholder="Email Address">
-					<button type="submit" class="btn" id="btn_enviar"><img src="./images/icon-arrow.svg"
+					<button type="submit" class="btn" id="btn_enviar" aria-label="enviar_formulario"><img src="./images/icon-arrow.svg"
 							alt="icon-arrow/svg" aria-hidden="true"></button>
 					<img src="./images/icon-error.svg" alt="icon-error/svg" class="icon-error" aria-hidden="true">
 					<small class="mensaje-incorrecto">Please provide a valid email</small>
