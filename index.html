@@ -9,43 +9,38 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
 	<title>Frontend Mentor | Base Apparel coming soon page</title>
-
-	<!-- font google -->
-	<style>@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');</style>
-
-	<!--Estilos-->
-
+	<link rel="stylesheet" href="./app/normalize.css">
 	<link rel="stylesheet" href="./app/app.css">
 </head>
 
+
 <body>
 
-	<div class="contenedor">
+	<header class="hero">
 
-		<header class="header">
-			<img src="./images/logo.svg" alt="logo/svg" class="logo">
-			<div class="header-texto">
-				<h1 class="titulo naranja">We're</h1>
-				<h1 class="titulo">coming</h1>
-				<h1 class="titulo">soon</h1>
-				<p class="parrafo">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-				<div class="formulario">
-					<form id="formulario" autocomplete="off">
-						<input type="text" placeholder="Email Address" class="input" id="email">
-						<img src="./images/icon-error.svg" alt="" class="icono__incorrecto" >
-						<button class="submit" id="boton"><img src="./images/icon-arrow.svg" alt="arrow / svg" class="icono"></button>
-						<p class="mensaje">Please provide a valid email</p>
-					</form>
-				</div>
-			</div>
-		</header>
-
-		<div class="contenedor-img">
-			<img src="./images/hero-desktop.jpg" alt="chica/svg" class="imagen">
+		<div class="contenedor">
+			<img src="./images/logo.svg" alt="base-apparel" class="logo">
 		</div>
 
-	</div>
+		<img src="./images/hero-mobile.jpg" alt="hero-mobile" aria-hidden="true" class="img img-mobile">
+		<img src="./images/hero-desktop.jpg" alt="hero-desktop" aria-hidden="true" class="img img-desktop">
 
+		<div class="contenedor">
+			<div class="texto">
+				<h1><span>WE'RE</span>COMMING SOON</h1>
+				<p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay
+					up-to-date with announcements and our launch deals.</p>
+				<form id="formulario" class="formulario" autocomplete="off">
+					<input type="email" name="email" id="email" aria-label="email" placeholder="Email Address">
+					<button type="submit" class="btn" id="btn_enviar"><img src="./images/icon-arrow.svg"
+							alt="icon-arrow/svg" aria-hidden="true"></button>
+					<img src="./images/icon-error.svg" alt="icon-error/svg" class="icon-error" aria-hidden="true">
+					<small class="mensaje-incorrecto">Please provide a valid email</small>
+				</form>
+			</div>
+		</div>
+
+	</header>
 	<script src="./app/app.js"></script>
 
 </body>
