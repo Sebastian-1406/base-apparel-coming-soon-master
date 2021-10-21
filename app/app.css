@@ -15,25 +15,25 @@ body {
   width: 130px;
   vertical-align: middle;
 }
-.hero .texto {
+.container .texto {
   text-align: center;
   color: var(--Desaturated-Red);
 }
-.hero .img {
+.container .img {
   max-width: 100%;
   vertical-align: middle;
 }
 
-.hero .texto h1 span {
+.hero  h1 span {
   color: var(--Desaturated-Red);
   font-weight: 300;
   display: block;
 }
-.hero .texto h1 {
+.hero h1 {
   color: var(--Dark-Grayish-Red);
   letter-spacing: 8px;
 }
-.hero .texto p {
+.container .texto p {
   line-height: 20px;
   font-size: 14px;
 }
@@ -108,7 +108,7 @@ body {
     display: flex;
     justify-content: center;
   }
-  .hero {
+  .container {
     width: 400px;
   }
   .img-mobile {
@@ -117,7 +117,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero {
+  .container {
     width: 100%;
   }
   .img-mobile {
@@ -126,7 +126,7 @@ body {
   .img-desktop {
     display: block;
   }
-  .hero {
+  .container {
     display: grid;
     grid-template-columns: 1fr 150px auto;
     grid-template-rows: 1fr;
@@ -134,29 +134,32 @@ body {
     background-image: url("../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
   }
-  .hero .img {
+  .container .img {
     grid-column: 3;
   }
-  .contenedor:first-child {
+  main {
+    grid-row: 1;
+  }
+  .container .contenedor:first-child{
     position: absolute;
     top: 0;
     left: 0px;
   }
-  .contenedor:last-child {
-    grid-row: 1;
+  .container .contenedor:last-child {
+    position: relative;
   }
   .contenedor {
     padding: 50px 130px;
   }
-  .hero .texto {
+  .container .texto {
     text-align: left;
     grid-row: 1;
   }
-  .hero .texto h1 {
+  .container .texto h1 {
     font-size: 3.5em;
     letter-spacing: 10px;
   }
-  .hero .texto p {
+  .container .texto p {
     font-size: 15px;
   }
   .btn {
